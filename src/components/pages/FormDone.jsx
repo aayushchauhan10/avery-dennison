@@ -2,7 +2,7 @@ import { React, useState } from "react";
 import FormCreation from "./FormCreation";
 
 const FormDone = ({ children }) => {
-  const [showForm, setShowForm] = useState(false);
+  const [showForm, setShowForm] = useState(true);
 
   const toggleForm = () => {
     setShowForm(!showForm);

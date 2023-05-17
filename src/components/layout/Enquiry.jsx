@@ -5,7 +5,7 @@ import { paras } from "../../constants";
 
 const Para = ({ para }) => (
   <ul className="list-disc px-5 font-aktifoaLight">
-    <li className="my-4 w-[60%]">{para}</li>
+    <li className="my-4 w-[55%]">{para}</li>
   </ul>
 );
 
@@ -17,7 +17,7 @@ const Enquiry = () => {
       <img src={Group218} className="-z-50" />
       <div className="absolute top-[110vh] px-16">
         <div>
-          <h2 className="font-aktifoaSemibold text-[30px]">
+          <h2 className="font-aktifoaSemibold pb-2 text-[35px]">
             Dol Max Overlaminate Films
           </h2>
           <p className="font-aktifoaLight">

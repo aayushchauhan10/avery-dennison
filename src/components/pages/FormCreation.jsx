@@ -1,7 +1,7 @@
 import React from "react";
 
 const FormCreation = React.createContext({
-  showForm: false,
+  showForm: true,
   toggleForm: () => {},
 });
 

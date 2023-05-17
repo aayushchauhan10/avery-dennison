@@ -122,7 +122,7 @@ const Form = () => {
                 </option>
               ))}
             </select>
-            <label htmlFor="distributor" className="font-aktifoaBook">
+            <label htmlFor="distributor" className="font-aktifoaBook ">
               Preferred Distributor:
             </label>
             <select className="w-full border border-[#62777D] font-aktifoaBook my-2 rounded p-1">
@@ -142,7 +142,7 @@ const Form = () => {
                 placeholder="Message"
                 value={formData.message}
                 onChange={handleInputChange}
-                className="mb-2 p-2 border border-[#62777D] rounded"
+                className=" my-2 p-2 border border-[#62777D] rounded"
               ></textarea>
             </div>
             <div className="flex items-center mb-2">
