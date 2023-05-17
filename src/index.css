@@ -1,0 +1,61 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: "aktifoa-bold";
+    src: url("./assets/fonts/aktifoa-bold.otf");
+  }
+
+
+@font-face {
+    font-family: "aktifoa-boldoblique";
+    src:url("./assets/fonts/aktifoa-boldoblique.otf");
+
+}
+@font-face {
+    font-family: "aktifoa-book";
+    src:url("./assets/fonts/aktifoa-book.otf");
+
+}
+@font-face {
+    font-family: "aktifoa-bookoblique";
+    src:url("./assets/fonts/aktifoa-bookoblique.otf");
+
+}
+@font-face {
+    font-family: "aktifoa-light";
+    src:url("./assets/fonts/aktifoa-light.otf");
+
+}
+@font-face {
+    font-family: "aktifoa-lightoblique";
+    src:url("./assets/fonts/aktifoa-lightoblique.otf");
+
+}
+@font-face {
+    font-family: "aktifoa-medium";
+    src:url("./assets/fonts/aktifoa-medium.otf");
+
+}
+@font-face {
+    font-family: "aktifoa-mediumoblique";
+    src:url("./assets/fonts/aktifoa-mediumoblique.otf");
+
+}
+@font-face {
+    font-family: "aktifoa-semibold";
+    src:url("./assets/fonts/aktifoa-semibold.otf");
+
+}
+@font-face {
+    font-family: "aktifoa-semiboldoblique";
+    src:url("./assets/fonts/aktifoa-semiboldoblique.otf");
+
+}
+
+
+
