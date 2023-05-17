@@ -16,12 +16,12 @@ const Link = ({ icon, description }) => (
 
 const Header = () => {
   return (
-    <div id="myHead">
+    <div>
       <img src={bannerImage} className="-z-50" />
-      <div className="absolute top-0 left-0 lg:w-full ">
-        <img src={headerLogo} className="p-[60px] w-[320px] h-48 " />
-        <div className="w-[46%] p-[60px] pb-5 ">
-          <h2 className="text-[30px] font-aktifoaBook pb-2  ">
+      <div className="absolute top-0 left-0">
+        <img src={headerLogo} className="p-[60px] w-[320px] h-48" />
+        <div className="w-[46%] p-[60px] pb-5">
+          <h2 className="text-[30px] font-aktifoaBook pb-2">
             Take your graphics protection to the next level with DOL max
             overLaminates
           </h2>
