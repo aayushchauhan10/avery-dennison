@@ -16,7 +16,7 @@ const Link = ({ icon, description }) => (
 
 const Header = () => {
   return (
-    <div>
+    <div className="myHead">
       <img src={bannerImage} className="-z-50" />
       <div className="absolute top-0 left-0">
         <img src={headerLogo} className="p-[60px] w-[320px] h-48" />
