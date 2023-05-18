@@ -6,6 +6,7 @@ export default {
       screens: {
         xxs: "290px",
         xxl: "1540px",
+        ssm: "374px",
         // min-width
       },
       fontFamily: {

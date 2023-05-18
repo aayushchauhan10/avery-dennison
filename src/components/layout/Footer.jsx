@@ -3,7 +3,7 @@ import { vectorImage } from "../../assets/images";
 
 const Footer = () => {
   return (
-    <div className="min-w-[200px] overflow-x-hidden xxs:transform xxs:translate-y-[215%] lg:transform lg:translate-y-[0] scale-120 w-[100%] ">
+    <div className="min-w-[200px] overflow-x-hidden xxs:transform xxs:translate-y-[408%] ssm:translate-y-[404%] lg:transform lg:translate-y-[0] scale-120 w-[100%] ">
       <div className="bg-[#1A1A1A] xxs:object-contain py-7">
         <div className="lg:flex lg:flex-row justify-around xxs:flex xxs:flex-col-reverse xxs:px-5">
           <div className="lg:flex lg:flex-row xxs:flex xxs:flex-col-reverse xxs:justify-start text-[#fff] lg:justify-around lg:items-center xxs:items-start ">

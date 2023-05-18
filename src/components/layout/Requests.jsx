@@ -22,7 +22,7 @@ const Request = ({ icon, title, description }) => (
 const Requests = () => {
   const { toggleForm } = useContext(FormCreation);
   return (
-    <div className="bg-[#e5e5e5] lg:flex lg:flex-row xxs:flex xxs:flex-col-reverse min-w-[200px] overflow-x-hidden xxs:transform xxs:translate-y-[52%] sm:transform sm:translate-y-[65%] md:transform md:translate-y-[56%] lg:transform lg:translate-y-[0] scale-120 w-[100%] ">
+    <div className="bg-[#e5e5e5] lg:flex lg:flex-row xxs:flex xxs:flex-col-reverse min-w-[200px] overflow-x-hidden xxs:transform xxs:translate-y-[98%] sm:transform sm:translate-y-[65%] md:transform md:translate-y-[56%] lg:transform lg:translate-y-[0] scale-120 w-[100%] ">
       <div className="lg:w-[120%]  xxs:w-auto">
         <img src={wallImage} className="md:w-full lg:w-full" />
       </div>

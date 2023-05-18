@@ -33,7 +33,7 @@ const Form = () => {
   return (
     <>
       {showForm && (
-        <div className="absolute z-50 lg:top-96 lg:right-6 xxs:top-[150vh] sm:right-[10vw] xxs:right-[-25vw] transform -translate-x-1/2 shadow-md -translate-y-1/2 bg-white p-6 rounded lg:w-[450px] xxs:w-[300px]">
+        <div className="absolute z-50 lg:top-96 lg:right-6 xxs:top-[150vh] sm:right-[10vw] xxs:right-[-30vw] transform -translate-x-1/2 shadow-md -translate-y-1/2 bg-white p-6 rounded lg:w-[450px] xxs:w-[300px]">
           <form id="myForm" onSubmit={handleFormSubmit}>
             <h2 className="lg:text-[24px] xxs:text-[16px] font-aktifoaBold ">
               Connect with us
