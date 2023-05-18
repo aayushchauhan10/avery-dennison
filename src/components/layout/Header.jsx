@@ -5,11 +5,11 @@ import { links } from "../../constants";
 
 const Link = ({ icon, description }) => (
   <div className="flex flex-col sm:w-1/4 md:w-1/6 items-center">
-    <div className="bg-[#292929] rounded-[50%] mx-2 flex items-center justify-between ">
+    <div className="bg-[#292929] rounded-[50%] mx-2 flex items-center justify-center ">
       <img src={icon} alt="" className="p-3 w-[50px] h-[54px]" />
     </div>
     <div>
-      <p className="px-4 py-1 text-sm sm:text-base text-center">
+      <p className="px-1 py-1 text-sm sm:text-base text-center">
         {description}
       </p>
     </div>
@@ -31,11 +31,11 @@ const Header = () => {
           className="w-44 mx-6 sm:mx-36 mt-10 h-auto mb-4"
         />
         <div className="p-6 sm:p-[60px] pb-5">
-          <h2 className="lg:w-[45%] lg:text-3xl text-base md:text-3xl xxs:w-auto xxs:text-3xl font-aktifoaBook pb-2">
+          <h2 className="lg:w-[45%] lg:text-3xl text-base md:text-3xl xxs:w-auto xxs:text-xl font-aktifoaBook pb-2">
             Take your graphics protection to the next level with DOL max
             overLaminates
           </h2>
-          <p className="font-aktifoaLight lg:w-[35%] xxs:w-auto text-lg sm:text-xl">
+          <p className="font-aktifoaLight lg:w-[35%] xxs:w-auto text-lg xxs:text-lg">
             Pair with MPI 1105 wrapping film for ramped up protection
           </p>
         </div>
