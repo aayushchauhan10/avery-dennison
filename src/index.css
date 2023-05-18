@@ -9,6 +9,10 @@
     direction: rtl;
 }
 
+.topToBottom{
+    direction: ltr;
+}
+
 @font-face {
     font-family: "aktifoa-bold";
     src: url("./assets/fonts/aktifoa-bold.otf");

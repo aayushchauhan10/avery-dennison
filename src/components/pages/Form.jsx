@@ -33,15 +33,20 @@ const Form = () => {
   return (
     <>
       {showForm && (
-        <div className="absolute top-96 right-6 transform -translate-x-1/2 shadow-md -translate-y-1/2 bg-white p-6 rounded w-[450px]">
+        <div className="absolute lg:top-96 lg:right-6 xxs:top-[150vh] sm:right-[10vw] xxs:right-[-25vw] transform -translate-x-1/2 shadow-md -translate-y-1/2 bg-white p-6 rounded lg:w-[450px] xxs:w-[300px]">
           <form id="myForm" onSubmit={handleFormSubmit}>
-            <h2 className="text-[24px] font-aktifoaBold ">Connect with us</h2>
-            <p className="mb-3 font-aktifoaBook">
+            <h2 className="lg:text-[24px] xxs:text-[16px] font-aktifoaBold ">
+              Connect with us
+            </h2>
+            <p className="mb-3 lg:text-[20px] xxs:text-[13px] font-aktifoaBook">
               for outstanding protective overlaminates
             </p>
-            <div className="grid justify-start items-start grid-cols-2">
-              <div>
-                <label htmlFor="firstName" className="font-aktifoaBook">
+            <div className="lg:grid justify-start items-start lg:grid-cols-2  xxs:grid xxs:grid-cols-1">
+              <div className="lg:flex-none xxs:flex xxs:flex-col">
+                <label
+                  htmlFor="firstName"
+                  className="lg:text-[16px] xxs:[10px] font-aktifoaBook"
+                >
                   First Name
                 </label>
                 <input
@@ -50,7 +55,7 @@ const Form = () => {
                   placeholder="Name"
                   value={formData.name}
                   onChange={handleInputChange}
-                  className="my-2 p-1 border border-[#62777D] rounded"
+                  className="my-2 p-1 border border-[#62777D] xxs:w-48 lg:w-auto rounded"
                 />
                 <label htmlFor="email" className="font-aktifoaBook">
                   Email
@@ -61,7 +66,7 @@ const Form = () => {
                   placeholder="Email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="my-2 p-1 border border-[#62777D] rounded"
+                  className="my-2 p-1 border border-[#62777D] xxs:w-48 lg:w-auto rounded"
                 />
                 <label htmlFor="company" className="font-aktifoaBook">
                   Company
@@ -72,10 +77,10 @@ const Form = () => {
                   placeholder="Company"
                   value={formData.company}
                   onChange={handleInputChange}
-                  className="my-2 p-1 border border-[#62777D] rounded"
+                  className="my-2 p-1 border border-[#62777D] xxs:w-48 lg:w-auto rounded"
                 />
               </div>
-              <div>
+              <div className="lg:flex-none lg:ml-2 xxs:flex xxs:flex-col">
                 <label htmlFor="lastName" className="font-aktifoaBook">
                   Last Name
                 </label>
@@ -85,7 +90,7 @@ const Form = () => {
                   placeholder="Last Name"
                   value={formData.lastName}
                   onChange={handleInputChange}
-                  className="my-2 p-1 border border-[#62777D] rounded"
+                  className="my-2 p-1 border border-[#62777D] xxs:w-48 lg:w-auto rounded"
                 />
                 <label htmlFor="contact" className="font-aktifoaBook">
                   Contact
@@ -96,7 +101,7 @@ const Form = () => {
                   placeholder="contact"
                   value={formData.contact}
                   onChange={handleInputChange}
-                  className="my-2 p-1 border border-[#62777D] rounded"
+                  className="my-2 p-1 border border-[#62777D] xxs:w-48 lg:w-auto rounded"
                 />
                 <label htmlFor="state" className="font-aktifoaBook">
                   State
@@ -114,7 +119,7 @@ const Form = () => {
             <label htmlFor="describe" className="font-aktifoaBook">
               How would you desribe yourself?
             </label>
-            <select className="w-full border border-[#62777D] my-2 rounded p-1">
+            <select className="lg:w-full border border-[#62777D] my-2 xxs:w-48 rounded p-1">
               <option value="">Select a profile</option>
               {profiles.map((profile, index) => (
                 <option key={index} value={profile}>
@@ -125,7 +130,7 @@ const Form = () => {
             <label htmlFor="distributor" className="font-aktifoaBook ">
               Preferred Distributor:
             </label>
-            <select className="w-full border border-[#62777D] font-aktifoaBook my-2 rounded p-1">
+            <select className="lg:w-full border border-[#62777D] font-aktifoaBook xxs:w-48 my-2 rounded p-1">
               <option value="">Aerotect</option>
               {distributors.map((distributor, index) => (
                 <option key={index} value={distributor}>
@@ -142,7 +147,7 @@ const Form = () => {
                 placeholder="Message"
                 value={formData.message}
                 onChange={handleInputChange}
-                className=" my-2 p-2 border border-[#62777D] rounded"
+                className=" my-2 p-2 border border-[#62777D] xxs:w-48 lg:w-auto rounded"
               ></textarea>
             </div>
             <div className="flex items-center mb-2">
@@ -153,13 +158,13 @@ const Form = () => {
                 onChange={handleInputChange}
                 className="mr-2 border border-[#62777D]"
               />
-              <label className="text-[12px] font-aktifoaBook">
+              <label className="text-[12px] xxs:w-48 lg:w-auto font-aktifoaBook">
                 I'd like to receive promotions, product information and service
                 offers from Avery Dennison.
               </label>
             </div>
 
-            <div className="flex justify-end">
+            <div className="lg:flex lg:justify-end xxs:flex xxs:justify-start">
               <button
                 type="submit"
                 className="text-white w-auto flex items-center font-aktifoaSemibold py-2 px-4 bg-[#f26621] rounded mr-2"

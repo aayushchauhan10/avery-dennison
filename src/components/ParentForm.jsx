@@ -5,7 +5,7 @@ import { Header, Enquiry, Requests, Footer } from "./layout";
 const ParentForm = () => {
   return (
     <FormDone>
-      <div>
+      <div className="h-auto">
         <Header />
         <Enquiry />
         <Requests />

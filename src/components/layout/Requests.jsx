@@ -4,13 +4,17 @@ import { requests } from "../../constants";
 import { FormCreation } from "../pages";
 
 const Request = ({ icon, title, description }) => (
-  <div className="flex px-16 py-6">
-    <div className=" bg-[#ffffff] mx-3 px-6  flex items-center rounded-[50%]">
-      <img src={icon} alt="" className="w-7 h-7.5 " />
+  <div className="lg:flex px-16 lg:items-center lg:justify-center xxs:justify-start py-6">
+    <div className="bg-[#ffffff] lg:mx-3 xxs:ml-6 xxs:mb-2 xxs:w-[50px] xxs:h-[50px] lg:w-[80px]  lg:h-[80px] lg:px-6 xxs:object-contain xxs:px-1 lg:flex lg:justify-center lg:items-center xxs:flex xxs:justify-center xxs:items-center rounded-[50%]">
+      <img
+        src={icon}
+        alt=""
+        className="xxs:w-[80%] object-contain lg:w-7 lg:h-7.5 xxs:h-9"
+      />
     </div>
-    <div className="flex w-[80%] ml-6 flex-col">
+    <div className="flex lg:w-[80%] ml-6 flex-col">
       <h2 className="font-aktifoaMedium ">{title}</h2>
-      <p className="font-aktifoaLight text-[14px] w-[99%]">{description}</p>
+      <p className="font-aktifoaLight text-[14px] lg:w-[99%]">{description}</p>
     </div>
   </div>
 );
@@ -18,12 +22,14 @@ const Request = ({ icon, title, description }) => (
 const Requests = () => {
   const { toggleForm } = useContext(FormCreation);
   return (
-    <div className="bg-[#e5e5e5] flex ">
-      <div className="w-[70%]">
-        <img src={wallImage} />
+    <div className="bg-[#e5e5e5] lg:flex lg:flex-row xxs:flex xxs:flex-col-reverse min-w-[200px] overflow-x-hidden xxs:transform xxs:translate-y-[52%] sm:transform sm:translate-y-[65%] md:transform md:translate-y-[56%] lg:transform lg:translate-y-[0] scale-120 w-[100%] ">
+      <div className="lg:w-[120%]  xxs:w-auto">
+        <img src={wallImage} className="md:w-full lg:w-full" />
       </div>
-      <div className="p-8">
-        <h1 className="font-aktifoaBold mx-16 text-[26px]">Why us?</h1>
+      <div className="lg:p-8 xxs:my-32">
+        <h1 className="font-aktifoaBold lg:mx-16 xxs:mx-10 text-[26px]">
+          Why us?
+        </h1>
         {requests.map((request, index) => (
           <Request key={index} {...request} />
         ))}

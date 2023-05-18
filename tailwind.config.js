@@ -3,6 +3,11 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        xxs: "290px",
+        xxl: "1540px",
+        // min-width
+      },
       fontFamily: {
         aktifoaBold: ["aktifoa-bold", "sans-serif"],
         aktifoaBoldOblique: ["aktifoa-boldoblique", "sans-serif"],

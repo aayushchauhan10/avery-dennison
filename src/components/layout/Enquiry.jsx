@@ -5,7 +5,7 @@ import { paras } from "../../constants";
 
 const Para = ({ para }) => (
   <ul className="list-disc px-5 font-aktifoaLight">
-    <li className="my-4 w-[55%]">{para}</li>
+    <li className="lg:my-4 xxs:my-1 lg:w-[55%] xxs:w-auto">{para}</li>
   </ul>
 );
 
@@ -13,19 +13,24 @@ const Enquiry = () => {
   const { toggleForm } = useContext(FormCreation);
 
   return (
-    <div>
-      <img src={Group218} className="-z-50" />
-      <div className="absolute top-[110vh] px-16">
+    <div className="">
+      <div className="min-w-[200px] overflow-x-hidden xxs:transform xxs:translate-y-[260%] lg:transform lg:translate-y-[0] scale-120 w-[100%] rightToLeft ">
+        <img
+          src={Group218}
+          className="-z-50 w-[100%] min-w-[1400px] xxs:pl-96 sm:pl-0 md:h-[100%]"
+        />
+      </div>
+      <div className="absolute xxl:top-[140vh]  lg:top-[110vh]  lg:z-50 xxs:z-0 lg:px-16 xxs:px-8 lg:py-0 xxs:p-10">
         <div>
-          <h2 className="font-aktifoaSemibold pb-2 text-[35px]">
+          <h2 className="font-aktifoaSemibold pb-2 lg:text-[35px] xxs:text-[20px] w-auto">
             Dol Max Overlaminate Films
           </h2>
-          <p className="font-aktifoaLight">
+          <p className="font-aktifoaLight w-auto">
             Printed graphics deserve maximum protection, DOL Max is the
             solution.
           </p>
         </div>
-        <div className="mt-5">
+        <div className="lg:mt-5 xxs:mt-1">
           <h3 className="font-aktifoaMedium mb-3">Features and Benefits:</h3>
           {paras.map((para, index) => (
             <Para key={index} {...para} />

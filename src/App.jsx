@@ -3,7 +3,7 @@ import ParentForm from "./components/ParentForm";
 function App() {
   return (
     <>
-      <ParentForm />
+      <ParentForm className="bg-[#E9E9E9]" />
     </>
   );
 }

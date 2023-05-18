@@ -18,11 +18,11 @@ const Link = ({ icon, description }) => (
 
 const Header = () => {
   return (
-    <div id="myHead" className="h-screen relative">
-      <div className="min-w-[360px] overflow-x-hidden w-[100%] rightToLeft">
+    <div id="myHead" className="relative">
+      <div className="min-w-[200px] overflow-x-hidden xxs:transform xxs:translate-y-[70%] lg:transform lg:translate-y-[0] scale-120 w-[100%] rightToLeft ">
         <img
           src={bannerImage}
-          className="-z-50 w-[100%] min-w-[1400px] h-auto"
+          className="-z-50 w-[100%] min-w-[1400px] xxs:pl-96 sm:pl-0 md:h-[100%] "
         />
       </div>
       <div className="absolute top-0 left-0 ">
@@ -31,11 +31,11 @@ const Header = () => {
           className="w-44 mx-6 sm:mx-36 mt-10 h-auto mb-4"
         />
         <div className="p-6 sm:p-[60px] pb-5">
-          <h2 className="w-[45%] text-base sm:text-lg md:text-xl lg:text-3xl font-aktifoaBook pb-2">
+          <h2 className="lg:w-[45%] lg:text-3xl text-base md:text-3xl xxs:w-auto xxs:text-3xl font-aktifoaBook pb-2">
             Take your graphics protection to the next level with DOL max
             overLaminates
           </h2>
-          <p className="font-aktifoaLight w-[35%] text-lg sm:text-xl">
+          <p className="font-aktifoaLight lg:w-[35%] xxs:w-auto text-lg sm:text-xl">
             Pair with MPI 1105 wrapping film for ramped up protection
           </p>
         </div>
