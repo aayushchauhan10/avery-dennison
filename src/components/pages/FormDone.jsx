@@ -6,7 +6,7 @@ const FormDone = ({ children }) => {
 
   const toggleForm = () => {
     setShowForm(!showForm);
-    const formElement = document.getElementById("myHead");
+    const formElement = document.getElementById("myForm");
     formElement.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 

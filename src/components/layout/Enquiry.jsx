@@ -3,6 +3,8 @@ import { FormCreation } from "../pages";
 import { Group218 } from "../../assets/images";
 import { paras } from "../../constants";
 
+
+
 const Para = ({ para }) => (
   <ul className="list-disc px-5 font-aktifoaLight">
     <li className="lg:my-4 xxs:my-1 lg:w-[55%] xxs:w-auto">{para}</li>
